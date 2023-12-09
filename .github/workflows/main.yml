@@ -12,7 +12,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'print contect'
+      - name: 'before'
         run: ls
+
+      - uses: actions/checkout@v3 
+
+      - name: 'after'
+        run: ls 
 
    
